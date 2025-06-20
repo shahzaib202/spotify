@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.left {
+  width: 25vw;
+  padding: 10px;
+}
+.right {
+  width: 75vw;
+  position: relative;
+}
+/* .home {
+  padding: 10px;
+} */
+.home ul li {
+  display: flex;
+  width: 14px;
+  gap: 15px;
+  list-style: none;
+  padding-top: 15px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+  gap: 3px;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.heading {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding-top: 15px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  font-size: 13px;
+}
+.heading img {
+  width: 25px;
+}
+.library {
+  min-height: 80vh;
+  position: relative;
+}
+.footer {
+  display: flex;
+  font-size: 10px;
+  color: grey;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.footer a {
+  color: grey;
+}
+.right {
+  margin: 16px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(34, 34, 34);
+}
+.header > * {
+  padding: 20px;
+}
+.buttons > * {
+  margin: 0 12px;
+}
+.signup-btn {
+  background-color: rgb(34, 34, 34);
+  /* background-color: black; */
+  color: rgb(156, 148, 148);
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.signup-btn:hover {
+  font-size: 17px;
+  color: white;
+}
+.login-btn {
+  background-color: white;
+  color: black;
+  /* font-weight: bold; */
+  border-radius: 21px;
+  padding: 10px;
+  width: 79px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.login-btn:hover {
+  font-weight: bold;
+  width: 80px;
+  font-size: 17px;
+  /* padding: 10 14px; */
+}
+.spotifyPlaylists {
+  padding: 16px;
+}
+.spotifyPlaylists .card {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #252525;
+  position: relative;
+}
+.card > * {
+  padding-top: 10px;
+}
+.spotifyPlaylists .card-container .card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.card-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 30px;
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+.spotifyPlaylists .card-container .card .play {
+  width: 28px;
+  height: 28px;
+  background-color: #1fdf64;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 168px;
+  right: 17px;
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: #1fdf64;
+  width: 100%;
+  padding: 12px;
+}
+.songs-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
